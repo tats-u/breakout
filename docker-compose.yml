@@ -1,0 +1,9 @@
+version: '3'
+services:
+  onlineranking:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - 127.0.0.1:11111:80
+    restart: unless-stopped
