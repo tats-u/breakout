@@ -161,4 +161,8 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-
+/block
+/breakout.dat
+/datacleaner
+/dataeditor
+/blockranking.cgi
