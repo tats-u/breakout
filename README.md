@@ -88,10 +88,15 @@ sudo yum install gcc-c++ make ncurses-devel
 ## 把握しているバグ
 
 - **一部環境でラケットを上下に動かすとラケットの表示がおかしくなる。**
-  - WSL Ubunut 18.04 + Windows Console / Hyperで再現
-  - リモートCentOS6 + OpenSSH for Win32 + Hyperでも再現
-  - リモートCentOS6 + PuTTYごった煮版では再現ならず
-  - リモートCentOS6 + Tera Termでも再現ならず
+  - 再現する環境
+    - WSL Ubunut 18.04 + Windows Console / Hyper (Windows 10)
+    - リモートCentOS6 + OpenSSH for Win32 + Hyper (Windows 10)
+    - リモートCentOS6 + OpenSSH on WSL + Hyper (Windows 10)
+  - 再現しない(正常に表示される)環境
+    - ネイティブUbuntu 18.04 + Hyper
+    - リモートCentOS6 + OpenSSH + Hyper (Ubuntu 18.04)
+    - リモートCentOS6 + PuTTYごった煮版 (Windows 10)
+    - リモートCentOS6 + Tera Term (Windows 10)
 - ごくまれに左の壁の一部が消えることがある。(Levelの左側)
 - リモート環境(Puttyなど)ではF3キーが効かないことがある。
 
